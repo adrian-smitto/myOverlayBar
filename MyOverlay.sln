@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOverlay", "MyOverlay.csproj", "{FC752A6D-5C8C-4637-9177-A4FFB09615FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OverlayWidgets", "OverlayWidgets", "{7043FA74-420E-439A-A246-EC921BDB1CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingerOverlayWidget", "OverlayWidgets\PingerOverlayWidget\PingerOverlayWidget.csproj", "{C3DDB49A-59AD-403E-B0E0-89538A94CE37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{FC752A6D-5C8C-4637-9177-A4FFB09615FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC752A6D-5C8C-4637-9177-A4FFB09615FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC752A6D-5C8C-4637-9177-A4FFB09615FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DDB49A-59AD-403E-B0E0-89538A94CE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DDB49A-59AD-403E-B0E0-89538A94CE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DDB49A-59AD-403E-B0E0-89538A94CE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DDB49A-59AD-403E-B0E0-89538A94CE37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3DDB49A-59AD-403E-B0E0-89538A94CE37} = {7043FA74-420E-439A-A246-EC921BDB1CBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B81F68B-16D1-4478-BF6B-5051632ED892}
