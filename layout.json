@@ -1,0 +1,50 @@
+﻿{
+    "Rows": [
+        {
+            "Id": 1,
+            "Items": [
+                {
+                    "Name": "Icon1",
+                    "Type": 1,
+                    "Value": "Content\\green.png",
+                    "Width": 24,
+                    "Height": 24
+                },
+                {
+                    "Name": "Icon2",
+                    "Type": 1,
+                    "Value": "Content\\muted.png",
+                    "Width": 24,
+                    "Height": 24
+                },
+                {
+                    "Name": "Icon3",
+                    "Type": 1,
+                    "Value": "Content\\yellow.png",
+                    "Width": 24,
+                    "Height": 24
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Items": [
+                {
+                    "Name": "Text1",
+                    "Type": 2,
+                    "Class": "BitcoinPriceWidget.cs",
+                    "Value": "$43566",
+                    "Width": 48,
+                    "Height": 24
+                },
+                {
+                    "Name": "Icon2",
+                    "Type": 1,
+                    "Value": "Content\\yellow.png",
+                    "Width": 48,
+                    "Height": 48
+                }
+            ]
+        }
+    ]
+}
