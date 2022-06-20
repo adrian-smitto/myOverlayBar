@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace MyOverlay.Models
 {
-    public static class OverlayWidgetPictureBoxItem
+    public class OverlayWidgetPictureBoxItem
     {
-        private static object _handler { get; set; }
-        public static object Handler
+        private object _handler { get; set; }
+        public object Handler
         {
             get
             {
@@ -23,9 +23,8 @@ namespace MyOverlay.Models
                 }
                 return _handler;
             }
-
         }
-        public static PictureBox Build(OverlayWidgetItem item)
+        public PictureBox Build(OverlayWidgetItem item)
         {
             if (string.IsNullOrEmpty(item.Class))
             {
@@ -43,13 +42,12 @@ namespace MyOverlay.Models
                 
                 return (PictureBox) ((IOverlayWidget)Handler).GetControl(item);
             }
-            return new PictureBox();
         }
 
-        internal static void Update(Control ctl, Control newctl)
+        internal static void UpdateControl(Control oldControl, Control newControl)
         {
-            ctl.BackColor = newctl.BackColor;
-            ctl.Refresh();
+            oldControl.BackColor = newControl.BackColor;
+            oldControl.Refresh();
         }
     }
 }

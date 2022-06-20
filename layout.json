@@ -1,17 +1,35 @@
 ﻿{
     "Rows": [
         {
-            "Id": 1,
-            "Items": [
-                {
-                    "Name": "Ping",
-                    "Type": 1,
-                    "Class": "Pinger.cs",
-                    "Value": "",
-                    "Width": 24,
-                    "Height": 24
-                }
-            ]
+          "Id": 1,
+          "Items": [
+            {
+              "Name": "Ping",
+              "Type": 1,
+              "Class": "Pinger.cs",
+              "Value": "",
+              "Width": 24,
+              "Height": 24
+            },
+            {
+              "Name": "BTCUSDT",
+              "Type": 2,
+              "Class": "BinanceTicker.cs",
+              "Value": "",
+              "Width": 48,
+              "Height": 24,
+              "Data": { "symbol": "BTCUSDT" }
+            },
+            {
+              "Name": "ETHUSDT",
+              "Type": 2,
+              "Class": "BinanceTicker.cs",
+              "Value": "",
+              "Width": 48,
+              "Height": 24,
+              "Data": { "symbol": "ETHUSDT" }
+            }
+          ]
         }
     ]
 }

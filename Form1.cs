@@ -64,7 +64,7 @@ namespace MyOverlay
                 if (ctl != null)
                 {
                     var newctl = widget.GetRefreshedControl();
-                    OverlayWidgetPictureBoxItem.Update(ctl, newctl);
+                    widget.UpdateControl(ctl, newctl);
                 }
             }
         }

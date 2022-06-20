@@ -90,7 +90,9 @@
     <Compile Include="Models\OverlayWidgetLabelItem.cs" />
     <Compile Include="Models\OverlayWidgetPictureBoxItem.cs" />
     <Compile Include="Models\OverlayWidgetRow.cs" />
+    <Compile Include="OverlayWidgets\BinanceTicker.cs" />
     <Compile Include="OverlayWidgets\IOverlayWidget.cs" />
+    <Compile Include="OverlayWidgets\Models\BinanceTickerModels.cs" />
     <Compile Include="OverlayWidgets\Pinger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
