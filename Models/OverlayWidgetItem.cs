@@ -15,8 +15,16 @@ namespace MyOverlay.Models
         public string Value { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
+        public string Id { get; set; }
 
-        public Control _control { get; set; }
+        private Control _control { get; set; }
+
+        public Control GetRefreshedControl()
+        {
+            this.Refresh();
+            return _control;
+        }
+
         public Control Control
         {
             get
@@ -31,7 +39,15 @@ namespace MyOverlay.Models
 
         public void Build()
         {
-            if(Type == (int)ItemType.Icon)
+            Id = Guid.NewGuid().ToString();
+
+            Refresh();
+
+        }
+
+        private void Refresh()
+        {
+            if (Type == (int)ItemType.Icon)
             {
                 _control = OverlayWidgetPictureBoxItem.Build(this);
             }
@@ -40,7 +56,7 @@ namespace MyOverlay.Models
                 _control = OverlayWidgetLabelItem.Build(this);
             }
 
-
+            _control.Tag = Id;
         }
     }
 }

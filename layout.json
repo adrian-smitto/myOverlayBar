@@ -5,7 +5,7 @@
             "Items": [
                 {
                     "Name": "Ping",
-                    "Type": 2,
+                    "Type": 1,
                     "Class": "Pinger.cs",
                     "Value": "",
                     "Width": 24,

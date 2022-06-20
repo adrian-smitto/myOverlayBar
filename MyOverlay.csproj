@@ -83,12 +83,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="LayoutHelper.cs" />
+    <Compile Include="Models\Config.cs" />
     <Compile Include="Models\ItemType.cs" />
     <Compile Include="Models\OverlayLayout.cs" />
     <Compile Include="Models\OverlayWidgetItem.cs" />
     <Compile Include="Models\OverlayWidgetLabelItem.cs" />
     <Compile Include="Models\OverlayWidgetPictureBoxItem.cs" />
     <Compile Include="Models\OverlayWidgetRow.cs" />
+    <Compile Include="OverlayWidgets\IOverlayWidget.cs" />
+    <Compile Include="OverlayWidgets\Pinger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -103,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="layout.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -134,6 +140,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
